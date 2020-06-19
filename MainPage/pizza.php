@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Chez Pizzaiol'o</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="site.css"/>
-</head>
-<div align="center">
-    <header>
-        <h1><img src="https://zupimages.net/up/20/20/edqh.png"/></h1>
-    </header>
-</div>
-<nav>
-    <ul id="navigation">
-        <li><a href="accueil.html">ACCUEIL</a></li>
-        <li><a href="pizza.html">PIZZA</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+
+<?php
+include 'Header.php';
+?>
+<body>
+<?php
+include 'Menu.php';
+?>
 <body>
 <p><a href="menuePizza">Cliquez ici pour télécharger le menu en format PDF</a></p>
 <section>
     <h1>LISTE DES PIZZAS DISPONIBLES</h1>
+    <?php
+    $lines = file("fichier.txt");
+    foreach($lines as $n => $line){
+        echo $line . "<br />";
+    }
+    ?>
     <div class="table-users">
         <table cellspacing="0">
             <tr>
@@ -58,13 +55,8 @@
         </table>
     </div>
 </section>
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Pizzaiol'o FRANCE
-            </p>
-        </div>
-    </div>
-</footer>
+<?php
+include 'Footer.php';
+?>
 </body>
 </html>

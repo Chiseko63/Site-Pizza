@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Chez Pizzaiol'o</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="site.css"/>
-</head>
-<div align="center">
-    <header>
-        <h1><img src="https://zupimages.net/up/20/20/edqh.png"/></h1>
-    </header>
-</div>
-<nav>
-    <ul id="navigation">
-        <li><a href="accueil.html">ACCUEIL</a></li>
-        <li><a href="pizza.html">PIZZA</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+
+<?php
+include 'Header.php';
+?>
+<body>
+<?php
+include 'Menu.php';
+?>
 <body>
 
 
